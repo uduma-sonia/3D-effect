@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 1000px;
+}
+
+.container {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card {
+  transform-style: preserve-3d;
+  width: 50%;
+  border-radius: 10px;
+  box-shadow: 5px 5px 8px 10px #888888;
+}
+
+.image {
+  text-align: center;
+}
+
+.image img {
+  width: 150px;
+  transition: all 0.75s ease-in-out;
+}
+
+.detail {
+  margin-top: 25px;
+  padding: 10px 40px;
+  text-align: center;
+  transition: all 0.75s ease-in-out;
+}
+
+h1 {
+  text-align: left;
+  padding-bottom: 10px;
+  transition: all 0.75s ease-in-out;
+}
+
+.detail p {
+  font-size: 20px;
+}
+
+#price {
+  padding: 20px 0px;
+  font-size: 35px;
+}
+
+.buttons {
+  display: flex;
+  transition: all 0.75s ease-in-out;
+}
+
+button {
+  background-color: transparent;
+  flex-grow: 1;
+  font-size: 20px;
+  font-weight: 500;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  padding: 5px 15px;
+  margin: 4px;
+  text-transform: capitalize;
+  border-radius: 15px;
+  box-shadow: 2px 2px 5px black;
+  cursor: pointer;
+}
+
+.purchase {
+  margin-top: 15px;
+  display: flex;
+  transition: all 0.75s ease-in-out;
+  width: 80%;
+  margin: auto;
+}
+
+.purchase button {
+  background-color: rgb(120, 120, 241);
+  font-weight: bolder;
+  /* width: 80%; */
+  padding: 3px 15px;
+}
